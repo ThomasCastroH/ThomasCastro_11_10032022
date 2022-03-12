@@ -1,0 +1,17 @@
+.banner {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 100px 0 100px;
+}
+
+.banner-logo {
+	width: 10%;
+}
+
+.banner-nav {
+	color: #FF6060;
+}
+
+.nav-link {
+	margin-right: 50px;
+}
