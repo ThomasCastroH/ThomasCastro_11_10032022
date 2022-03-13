@@ -1,17 +1,12 @@
 import '../styles/Banner.css'
-import logo from '../assets/logo.svg'
+import bannerImg from '../assets/home_section_bg.jpg'
 
 function Banner() {
     return (
         <div className="banner">
-            <img src={logo} alt='kasa-logo' className="banner-logo" />
-            <nav className="banner-nav">
-              <span className="nav-link">Accueil</span>
-              <span className="nav-link">A propos</span>
-            </nav>
+            <img className="banner-img" alt="Home banner" src={bannerImg} />
+            <span className='banner-txt'>Chez vous, partout et ailleurs</span>
         </div>
-
     )
 }
-
-export default Banner 
+export default Banner

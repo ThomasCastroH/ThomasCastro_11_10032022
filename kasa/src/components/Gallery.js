@@ -1,25 +1,16 @@
 import '../styles/Gallery.css'
 import Thumb from './Thumb'
 
-async function getLodging() {
-    let lodging = [];
-  
-    await fetch("../data/logements.json")
-      .then((res) => res.json())
-      .then((data) => {
-        lodging = data.item;
-      });
-  
-    console.log(lodging);;
-}
-
-getLodging();
 
 function Gallery () {
-    console.log();
+    const logementData = require('../data/logements.json');
+
     return (
         <div className="gallery">
-            <Thumb />
+            {logementData.map( logement => {
+                return <Thumb key={logement.id} logement={logement} />
+            })
+            }
         </div>
     )
 }
