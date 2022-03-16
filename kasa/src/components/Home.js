@@ -1,10 +1,10 @@
-import "../styles/App.css"
+import "../styles/Home.css"
 import Header from './Header'
 import Footer from './Footer'
 import Gallery from "./Gallery"
 import Banner from "./Banner"
 
-function App() {
+function Home() {
   return (<div className="container">
             <Header />
             <Banner />
@@ -14,4 +14,4 @@ function App() {
   )
 }
 
-export default App;
+export default Home;
