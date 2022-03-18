@@ -1,11 +1,14 @@
 import '../styles/Banner.css'
-import bannerImg from '../assets/home_section_bg.jpg'
 
-function Banner() {
+function Banner(props) {
+    const text = props.text;
+    const img = props.img
+    const alt = props.alt
+
     return (
         <div className="banner">
-            <img className="banner-img" alt="Home banner" src={bannerImg} />
-            <span className='banner-txt'>Chez vous, partout et ailleurs</span>
+            <img className="banner-img" alt={alt} src={img} />
+            <span className='banner-txt'>{text}</span>
         </div>
     )
 }

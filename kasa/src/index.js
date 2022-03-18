@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
 import Home from './components/Home';
 import About from './components/About';
+import Logement from './components/Logement';
+import ErrorPage from './components/ErrorPage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -12,6 +14,8 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/logement" element={<Logement />} />
+        <Route path="*" element={<ErrorPage />}/>
       </Routes>
     </Router>
   </React.StrictMode>,

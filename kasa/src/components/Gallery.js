@@ -7,8 +7,8 @@ function Gallery () {
 
     return (
         <div className="gallery">
-            {logementData.map( logement => {
-                return <Thumb key={logement.id} logement={logement} />
+            {logementData.map( (logement) => {
+                return  <Thumb key={logement.id} logement={logement} />
             })
             }
         </div>
