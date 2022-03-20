@@ -43,13 +43,17 @@ function Logement() {
                 <Rating rating={logementInfo.rating}/>
             </div>
             <div className='desc-container'>
-                <Dropdown size='medium' content='description'>
-                    <span>{logementInfo.description}</span>
+                <Dropdown size='medium' title='description'>
+                    <div>
+                        <span>{logementInfo.description}</span>
+                    </div>
                 </Dropdown>
-                <Dropdown size='medium' content='equipements'>
-                    {logementInfo.equipments.map( (equipment, index) => (
-                        <li key={equipment+index}>{equipment}</li>
-                    ))}
+                <Dropdown size='medium' title='equipements'>
+                    <div>
+                        {logementInfo.equipments.map( (equipment, index) => (
+                            <li key={equipment+index}>{equipment}</li>
+                        ))}
+                    </div>
                 </Dropdown>
             </div>
         </div>

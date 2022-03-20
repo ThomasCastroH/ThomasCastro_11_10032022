@@ -3,11 +3,11 @@ import { useState } from "react";
 function Dropdown(props) {
     const [visible, setVisible] = useState(true);
     const size = props.size;
-    const content = props.content;
+    const title = props.title;
     
     return (
-        <div>
-            <button className={'dropdown-button '+ size + ' ' + content} onClick={() => setVisible(!visible)}>{content.charAt(0).toUpperCase()+content.slice(1)}</button>
+        <div className={'dropdown-container '+ size + ' ' + title}>
+            <button className="dropdown-button" onClick={() => setVisible(!visible)}>{title.charAt(0).toUpperCase()+title.slice(1)}</button>
             {visible && <div className="dropdown-content">{props.children}</div>}
         </div>
     )
