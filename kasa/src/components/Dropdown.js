@@ -1,4 +1,6 @@
 import { useState } from "react";
+import '../styles/Dropdown.css'
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
 function Dropdown(props) {
     const [visible, setVisible] = useState(true);
@@ -7,7 +9,12 @@ function Dropdown(props) {
     
     return (
         <div className={'dropdown-container '+ size + ' ' + title}>
-            <button className="dropdown-button" onClick={() => setVisible(!visible)}>{title.charAt(0).toUpperCase()+title.slice(1)}</button>
+            <button className="dropdown-button" onClick={() => setVisible(!visible)}>
+                <div className="dropdown-button-content">
+                    <span className="dropdown-button-text">{title.charAt(0).toUpperCase()+title.slice(1)}</span>
+                    {visible ? <RiArrowDownSLine className="dropdown-arrow"/> : <RiArrowUpSLine className="dropdown-arrow"/>}
+                </div>
+            </button>
             {visible && <div className="dropdown-content">{props.children}</div>}
         </div>
     )

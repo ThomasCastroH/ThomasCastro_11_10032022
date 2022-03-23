@@ -1,8 +1,10 @@
+import '../styles/Tag.css'
+
 function Tag(props) {
     const content = props.content
     
     return (
-        <span>{content}</span>
+        <span className="tag">{content}</span>
     )
 }
 

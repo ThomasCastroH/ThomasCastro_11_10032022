@@ -3,6 +3,8 @@ import Tag from './Tag'
 import Header from './Header'
 import Rating from './Rating';
 import { useParams } from 'react-router-dom';
+import Footer from './Footer';
+import '../styles/Logement.css'
 
 function Logement() {
     const { id } = useParams();
@@ -21,26 +23,30 @@ function Logement() {
     // .tags _[string]
 
     return (
-        <div>
+        <div className='container'>
             <Header />
             <img className="lodging-cover" alt="Lodging Cover" src={logementInfo.cover}/> {/* carroussel */}
-            <div className='lodging-header'>
-                <div className='logding-info'>
-                    <h2>{logementInfo.title}</h2>
-                    <span>{logementInfo.location}</span>
+            <div className='first-container'>
+                <div className='lodging-header'>
+                    <div className='lodging-info'>
+                        <h2>{logementInfo.title}</h2>
+                        <span>{logementInfo.location}</span>
+                    </div>
+                </div>
+                <div className='lodging-landlord'>
+                    <span className='landlord-name'>{logementInfo.host.name}</span>
+                    <img className='landlord-img' alt='Tête du proprio' src={logementInfo.host.picture}/>
                 </div>
             </div>
-            <div className='lodging-landlord'>
-                <span className='landlord-name'>{logementInfo.host.name}</span>
-                <img className='landlord-img' alt='Tête du proprio' src={logementInfo.host.picture}/>
-            </div>
-            <div className='tag-container'>
-                {logementInfo.tags.map( (tag, index) => (
-                    <Tag key={tag+index} content={tag}/>
-                ))}
-            </div>
-            <div className='rating-container'>
-                <Rating rating={logementInfo.rating}/>
+            <div className='second-container'>
+                <div className='tag-container'>
+                    {logementInfo.tags.map( (tag, index) => (
+                        <Tag key={tag+index} content={tag}/>
+                    ))}
+                </div>
+                <div className='rating-container'>
+                    <Rating rating={logementInfo.rating}/>
+                </div>
             </div>
             <div className='desc-container'>
                 <Dropdown size='medium' title='description'>
@@ -56,6 +62,7 @@ function Logement() {
                     </div>
                 </Dropdown>
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,7 +1,9 @@
 import Header from "./Header"
 import Banner from "./Banner"
 import Dropdown from "./Dropdown"
+import Footer from "./Footer"
 import aboutBannerImg from '../assets/about_section_bg.png'
+import '../styles/About.css'
 
 const aboutUs = [
     {
@@ -33,13 +35,16 @@ function About() {
         <div className="container">
             <Header />
             <Banner img={aboutBannerImg} alt="About Banner"/>
-            {aboutUs.map( element => (
-                <Dropdown key={element.id} size='large' title={element.title}>
-                    <div>
-                        <span>{element.content}</span>
-                    </div>
-                </Dropdown>
-            ))}
+            <div className="about-dropdown">
+                {aboutUs.map( element => (
+                    <Dropdown key={element.id} size='large' title={element.title}>
+                        <div>
+                            <span>{element.content}</span>
+                        </div>
+                    </Dropdown>
+                ))}
+            </div>
+            <Footer />
         </div>
     )
 }
