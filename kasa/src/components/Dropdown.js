@@ -12,7 +12,7 @@ function Dropdown(props) {
             <button className="dropdown-button" onClick={() => setVisible(!visible)}>
                 <div className="dropdown-button-content">
                     <span className="dropdown-button-text">{title.charAt(0).toUpperCase()+title.slice(1)}</span>
-                    {visible ? <RiArrowDownSLine className="dropdown-arrow"/> : <RiArrowUpSLine className="dropdown-arrow"/>}
+                    {visible ? <RiArrowUpSLine className="dropdown-arrow"/> : <RiArrowDownSLine className="dropdown-arrow"/>}
                 </div>
             </button>
             {visible && <div className="dropdown-content">{props.children}</div>}

@@ -4,6 +4,7 @@ import Header from './Header'
 import Rating from './Rating';
 import { useParams } from 'react-router-dom';
 import Footer from './Footer';
+import Slider from './Slider';
 import '../styles/Logement.css'
 
 function Logement() {
@@ -18,14 +19,14 @@ function Logement() {
     // .host _{name,picture}
     // .id _string
     // .location _string
-    // .picture _[img]
+    // .pictures _[img]
     // .rating _int
     // .tags _[string]
 
     return (
         <div className='container'>
             <Header />
-            <img className="lodging-cover" alt="Lodging Cover" src={logementInfo.cover}/> {/* carroussel */}
+            <Slider images={logementInfo.pictures} />
             <div className='first-container'>
                 <div className='lodging-header'>
                     <div className='lodging-info'>

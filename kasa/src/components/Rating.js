@@ -13,8 +13,6 @@ function Rating(props) {
         }   
     });
 
-    console.log(stars);
-
     return (
         <div>
             {stars.map( (star, index) => (

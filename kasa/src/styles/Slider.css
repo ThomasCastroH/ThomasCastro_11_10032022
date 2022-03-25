@@ -1,0 +1,45 @@
+.slider {
+    position: relative;
+    height: 415px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 50px auto;
+}
+
+.slider-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: scale(1);
+}
+
+.right-arrow, .left-arrow {
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.left-arrow {
+    left: 0;
+}

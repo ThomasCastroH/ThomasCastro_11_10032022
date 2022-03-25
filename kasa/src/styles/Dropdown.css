@@ -1,8 +1,9 @@
 .medium {
-    width: 580px;
+    min-width: 400px;
+    width: 45%;
 }
 
-.medium > button, div{
+.medium > button{
     border-radius: 10px;
 }
 
@@ -11,7 +12,7 @@
     margin-bottom: 30px;
 }
 
-.medium > button, div{
+.large > button{
     border-radius: 5px;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .dropdown-content {
-    padding: 20px 10px 10px 10px;
+    padding: 30px 20px 20px 10px;
     margin-top: -10px;
     background: #F7F7F7;
     color: #FF6060;

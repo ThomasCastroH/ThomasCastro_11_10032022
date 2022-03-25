@@ -1,4 +1,5 @@
 .about-dropdown {
+    height: 600px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
