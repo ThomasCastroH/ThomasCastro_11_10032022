@@ -56,3 +56,15 @@
         height: 340px;
     }
 }
+
+@media (max-width: 376px) {
+    .thumb {
+        width: 280px;
+        height: 280px;
+    }
+
+    .lodging-link {
+        width: 280px;
+        height: 280px;
+    }
+}

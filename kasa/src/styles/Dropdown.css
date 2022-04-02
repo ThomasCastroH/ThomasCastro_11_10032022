@@ -1,5 +1,4 @@
 .medium {
-    min-width: 400px;
     width: 45%;
 }
 
@@ -49,4 +48,10 @@
 
 .dropdown-content li {
     list-style: none;
+}
+
+@media (max-width: 769px) {
+    .dropdown-content {
+        font-size: 14px;
+    }
 }

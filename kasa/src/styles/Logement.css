@@ -42,3 +42,39 @@
     align-items: flex-start;
     height: 250px;
 }
+
+@media (max-width: 769px) {
+    .first-container, .second-container, .desc-container {
+        margin: 0 4% 20px 4%;
+    }
+
+    .first-container {
+        display: block;
+    }
+
+    .second-container {
+        display: block;
+        position: relative;
+        top: -70px;
+    }
+
+    .rating-container {
+        position: relative;
+        top: 40px;
+    }
+
+    .desc-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .description, .equipements {
+        width: 100%;
+    }
+
+    .lodging-landlord {
+        position: relative;
+        top: 60px;
+        justify-content: end;
+    }
+}

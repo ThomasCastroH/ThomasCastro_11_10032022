@@ -43,3 +43,16 @@
 .left-arrow {
     left: 0;
 }
+
+@media (max-width: 769px) {
+    .slider {
+        height: 300px;
+        margin: 20px 4% 0 4%;
+    }
+
+    .slider-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

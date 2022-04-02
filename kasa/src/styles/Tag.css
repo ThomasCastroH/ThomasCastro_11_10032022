@@ -1,8 +1,14 @@
 .tag {
-    min-width: 115px;
+    width: 115px;
     margin: 10px 10px 10px 0;
     color: white;
     background: #FF6060;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
+}
+
+@media (max-width: 769px) {
+    .tag {
+        font-size: 11px;
+    }
 }
