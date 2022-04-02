@@ -1,7 +1,14 @@
 .about-dropdown {
     height: 600px;
-    margin-top: 30px;
+    margin: 30px 100px 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 769px) {
+    .about-dropdown {
+        margin: 30px 4% 0 4%;
+        height: 100%;
+    }
 }

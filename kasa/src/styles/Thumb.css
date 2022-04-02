@@ -32,3 +32,27 @@
     width: 340px;
     height: 340px;
 }
+
+@media (max-width: 1025px) {
+    .thumb {
+        width: 220px;
+        height: 220px;
+    }
+
+    .lodging-link {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 769px) {
+    .thumb {
+        width: 340px;
+        height: 340px;
+    }
+
+    .lodging-link {
+        width: 340px;
+        height: 340px;
+    }
+}

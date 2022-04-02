@@ -17,3 +17,12 @@
     width: 4%;
     margin-top: 1%;
 }
+
+@media (max-width: 769px) {
+    .footer-logo {
+        width: 30%;
+    }
+    .footer-disclaimer {
+        font-size: 12px;
+    }
+}

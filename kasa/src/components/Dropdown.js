@@ -6,7 +6,7 @@ function Dropdown(props) {
     const [visible, setVisible] = useState(true);
     const size = props.size;
     const title = props.title;
-    
+
     return (
         <div className={'dropdown-container '+ size + ' ' + title}>
             <button className="dropdown-button" onClick={() => setVisible(!visible)}>

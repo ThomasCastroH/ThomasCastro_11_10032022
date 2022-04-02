@@ -21,3 +21,27 @@
     font-size: 42px;
     color: white;
 }
+
+@media (max-width: 769px) {
+    .banner {
+        margin: 50px 4% 0 4%;
+        height: 220px;
+    }
+    .banner-txt {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 426px) {
+    .banner {
+        margin: 50px 4% 0 4%;
+        height: 220px;
+    }
+    .banner-txt {
+        width: 80%;
+        font-size: 34px;
+        left: 5%;
+        top: 25%;
+        transform: none;
+    }
+}

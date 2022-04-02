@@ -1,13 +1,12 @@
 .slider {
     position: relative;
     height: 415px;
-    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     border-radius: 25px;
-    margin: 50px auto;
+    margin: 50px 100px;
 }
 
 .slider-img {
@@ -21,6 +20,7 @@
 }
 
 .slide.active {
+    width: 100%;
     opacity: 1;
     transition-duration: 0.5s;
     transform: scale(1);
